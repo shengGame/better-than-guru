@@ -14,16 +14,100 @@
 
 
   body {
-    font-family: "Poppins", sans-serif;
-
-    /* display: flex; */
-
-    /* min-height: 95vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
   }
 
   .container {
-    display: flex;
+    height: 747px;
+    width: 747px;
+    display: grid;
+    background-color: #000;
+    grid-template-columns: 231px 91px 337px 61px;
+    grid-template-rows: 49px 271px 31px 319px 41px;
+    gap: 9px;
   }
+
+
+  .item {
+      background-color:#F0F1EC;
+  }
+
+
+  .blue {
+    display: flex;
+    background-color:  #004592;
+    text-align: left;
+    padding-left: 23px;
+    align-items: center;
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .white1 {
+    grid-column: span 2;
+    display: flex;
+    /* text-align:right;  */
+    justify-content: end;
+    align-items: center;
+    padding-right: 23px;
+  }
+
+  .black1 {
+    background-color: #232629;
+    /* grid-column: span 2; */
+    display: flex;
+    /* justify-content: end; */
+    align-items: center;
+  }
+
+  .white2 {
+    grid-row: span 2;
+  }
+
+  .white3 {
+    border-right: solid black 10px;
+  }
+
+  .white4 {
+    grid-row: span 2;
+  } 
+
+  .black2 {
+    background-color: #232629;
+    grid-column: span 2;
+
+    /* display: flex; */
+    /* justify-content: end; */
+    /* align-items: center; */
+  }
+
+  .yellow {
+    background-color: #F9D01E;
+    grid-row: span 2;
+  }
+
+  .red1 {
+   background-color: #E72F24; 
+  }
+
+  .blue2 {
+    background-color:  #004592;
+    grid-column: span 2;
+    border-left: solid black 10px;
+  }
+
+  .red {
+    /* background-color: #E72F24;  */
+    border-bottom: solid black 10px;  
+  }
+
+
+  
 
   .sec-left {
     display: flex;
@@ -50,10 +134,10 @@
     max-height: 200px;
     min-height: 200px;
 
-    /* display: inline-flex;
-    width:50%;
-     */
+  
   }
+
+
 
   .content {
     padding:10px;
@@ -61,8 +145,9 @@
 
 
   .title {
-    font-size: 3rem;
+    font-size: 6rem;
     margin: 0;
+    color:#F0F1EC;
   }
 
   .name {
@@ -70,14 +155,17 @@
     margin: 0;
   }
 
-
   .text {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+
+  .quote {
     text-align: justify;
     font-style: italic;
   }
 
-
- 
 
   .card img {
     width: 200px;  
@@ -104,76 +192,35 @@
 </head>
 
 <body>
-  <div class="title">Better Than Guru</div>
-  <hr>
   <div class="container">
-    <div class="sec-left">
-      <button class="btn">Home</button>
-      <button class="btn">Gurus</button>
-      <button class="btn">About</button>
-      <button class="btn">Contact</button>
+    <div class="item blue">
+      <div class="title">Better Than Guru</div>
     </div>
-    <div class="sec-right">
-      <div class="card">
-        <div class="photo">
-          <img class="tile-image" src="./assets/images/MicchelB.jpeg" alt="hand and flower in water">
-        </div>
-        <div class="content">
-          <div class="name">Michael Burry</div>
-          <div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </div>
-        </div>
-      </div>
+    <div class="item white1">
+      <div class="text">What We Do</div>
+    </div>
+    <div class="item white2"></div>
+    <div class="item black1"></div>
+    <div class="item white3"></div>
+    <div class="item red1"></div>
+    <div class="item yellow"></div>
+    <div class="item white4"></div>
+    <div class="item black2"></div>
+    <div class="item white3"></div>
+    <div class="item blue2"></div>
 
-      <div class="card">
-        <div class="photo">
-          <img class="title-image" src="./assets/images/MicchelB.jpeg" alt="hand and flower in water">
-        </div>
-        <div class="content">
-          <div class="name">Michael Burry</div>
-          <div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="photo">
-          <img class="tile-image" src="./assets/images/MicchelB.jpeg" alt="hand and flower in water">
-        </div>
-        <div class="content">
-          <div class="name">Michael Burry</div>
-          <div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="photo">
-          <img class="tile-image" src="./assets/images/MicchelB.jpeg" alt="hand and flower in water">
-        </div>
-        <div class="content">
-          <div class="name">Michael Burry</div>
-          <div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </div>
-        </div>
-      </div>
-
+    <!-- <div class="item blue"></div>
    
-
-    <!-- <div class="left card"><img class="tile-image" src="./assets/images/MicchelB.jpeg" alt="hand and flower in water">
-
-      <h2 class="card-title">Michael Burry</h2>
-      <p class="card-text">"It is ludicrous to believe that asset bubbles can only be recognized in hindsight."</p>
-
-    </div>
-
-    <div class="right card"><img class="tile-image" src="./assets/images/charlieM.jpeg" alt="metal structure">
-      <h2 class="card-title">Charlie Munger</h2>
-      <p class="card-text">"Just the discipline of having to put your thoughts in order with somebody else is a very useful thing."</p>
-    </div> -->
-
-  </div>
-  </div>
+   
+    <div class="item red"></div>
+    <div class="item white5"></div>
+    <div class="item yellow"></div>
+    <div class="item black"></div> -->
+  </div>  
   
-  <footer>
+  <!-- <footer>
     <p>powered by nyse dojo 2023.</p>
-  </footer>
+  </footer> -->
 </body>
 
 </html>
