@@ -51,7 +51,6 @@
   .white1 {
     grid-column: span 2;
     display: flex;
-    /* text-align:right;  */
     justify-content: end;
     align-items: center;
     padding-right: 23px;
@@ -69,21 +68,24 @@
     grid-row: span 2;
   }
 
+  .white2 img {
+    width: 337px;  
+    height: 311px;
+    object-fit: cover;
+  }
+
   .white3 {
-    border-right: solid black 10px;
+    /* border-right: solid black 10px; */
   }
 
   .white4 {
+    border-top: solid black 10px;
     grid-row: span 2;
   } 
 
   .black2 {
     background-color: #232629;
     grid-column: span 2;
-
-    /* display: flex; */
-    /* justify-content: end; */
-    /* align-items: center; */
   }
 
   .yellow {
@@ -96,9 +98,16 @@
   }
 
   .blue2 {
+    display: flex;
     background-color:  #004592;
     grid-column: span 2;
     border-left: solid black 10px;
+    
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 23px;
   }
 
   .red {
@@ -112,9 +121,18 @@
   .sec-left {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding:1rem;
-    width: 10%;
+    gap:0.5rem;
+    /* padding:3rem;    */
+    width: 60%; 
+    /* justify-content:center; */
+    /* align-items:center; */
+    height: 100%; /* for align vertically*/
+  }
+
+  .btn {
+    background-color: #F9D01E;
+    font-size: 2rem;
+    padding-left: 10px;
   }
 
   .sec-right {
@@ -167,10 +185,9 @@
   }
 
 
-  .card img {
-    width: 200px;  
-    height: 200px;
-    margin-right: 20px;
+  .black2 img {
+    width: 437px;  
+    height: 319px;
     object-fit: cover;
   }
 
@@ -199,23 +216,34 @@
     <div class="item white1">
       <div class="text">What We Do</div>
     </div>
-    <div class="item white2"></div>
+    <div class="item white2">
+      <div class="photo">
+        <img class="title-img" src="./assets/images/charlieM.jpeg" alt="hand and flower in water">
+      </div>
+    </div>
     <div class="item black1"></div>
     <div class="item white3"></div>
     <div class="item red1"></div>
     <div class="item yellow"></div>
-    <div class="item white4"></div>
-    <div class="item black2"></div>
+    <div class="item white4">
+      <div class="sec-left">
+        <div class="btn">Home</div>
+        <div class="btn">Gurus</div>
+        <div class="btn">About</div>
+        <div class="btn">Contact</div>
+      </div>
+    </div>
+    <div class="item black2">
+      <div class="photo">
+        <img class="title-img" src="./assets/images/MicchelB.jpeg" alt="hand and flower in water">
+      </div>
+    </div>
     <div class="item white3"></div>
-    <div class="item blue2"></div>
+    <div class="item blue2">
+      <p>Powered by nyse dojo 2023.</p>
+    </div>
 
-    <!-- <div class="item blue"></div>
-   
-   
-    <div class="item red"></div>
-    <div class="item white5"></div>
-    <div class="item yellow"></div>
-    <div class="item black"></div> -->
+  
   </div>  
   
   <!-- <footer>
